@@ -1,0 +1,19 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.post {
+  width: 50vw;
+  border: 1px solid rgb(160, 160, 160);
+  padding: 20px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border-radius: 25px;
+}
+.postImage {
+  width: 100%;
+}
