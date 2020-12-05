@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
+import Post from "./components/post/Post";
+import Navbar from "./components/navbar/Navbar";
 // Importing axios
 import axios from "axios";
 
@@ -23,15 +25,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* Navbar */}
+        <Navbar />
+        {/* Post list */}
         <div className="posts">
           {this.state.posts.map((post) => (
-            <div className="post" key={post.id}>
-              <img className="postImage" alt="post" src={post.urlToImage} />
-              <h3>
-                <a href={post.url}>{post.title.toUpperCase()}</a>
-              </h3>
-              <p>{post.description}</p>
-            </div>
+            <Post post={post} key={post.id} />
           ))}
         </div>
       </div>

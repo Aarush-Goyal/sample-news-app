@@ -1,19 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .posts {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
   margin-top: 10vh;
   margin-bottom: 10vh;
+  margin-left: 10%;
+  width: 90%;
 }
 .post {
-  width: 50vw;
+  width: 25vw;
   border: 1px solid rgb(160, 160, 160);
-  padding: 20px;
   margin-top: 2vh;
   margin-bottom: 2vh;
-  border-radius: 25px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
 }
 .postImage {
   width: 100%;
+}
+
+.Navbar {
+  width: 5%;
+  color: white;
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.NavIcons {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.PostTitle {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.PostContent {
+  padding: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .post {
+    width: 80%;
+    font-size: 16px;
+  }
+  .Navbar {
+    width: 10%;
+  }
+  .posts {
+    width: 90%;
+    margin-left: 10%;
+  }
+  .PostDescription {
+    display: none;
+  }
 }
