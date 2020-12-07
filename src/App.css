@@ -15,6 +15,7 @@
 }
 .post {
   width: 25vw;
+  height: 50vh;
   border: 1px solid rgb(160, 160, 160);
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -49,10 +50,15 @@
 .PostTitle {
   text-decoration: none;
   color: aliceblue;
+  font-size: 20px;
 }
 
 .PostContent {
   padding: 14px;
+}
+
+.PostDescription {
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 600px) {

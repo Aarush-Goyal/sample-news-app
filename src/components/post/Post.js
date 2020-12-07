@@ -1,6 +1,7 @@
 // News Posts
 
 import React from "react";
+import { truncate } from "lodash";
 
 const Post = (props) => {
   return (
@@ -10,7 +11,7 @@ const Post = (props) => {
         className="postImage"
         style={{
           width: "100%",
-          height: "15vw",
+          height: "13vw",
           backgroundImage: `linear-gradient(hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 0%, 1) 100%), url(${props.post.urlToImage})`,
           backgroundSize: "100% 100%",
         }}
@@ -21,7 +22,9 @@ const Post = (props) => {
             {props.post.title.toUpperCase()}
           </a>
         </h3>
-        <p className="PostDescription">{props.post.description}</p>
+        <p className="PostDescription">
+          {truncate(props.post.description, { length: 100 })}
+        </p>
       </div>
     </div>
   );
