@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
 .posts {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -23,6 +25,7 @@
 }
 .postImage {
   width: 100%;
+  /* filter: sepia(90%); */
 }
 
 .Navbar {
@@ -67,4 +70,15 @@
   .PostDescription {
     display: none;
   }
+  .posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 400%;
 }
